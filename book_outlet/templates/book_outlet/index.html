@@ -4,6 +4,8 @@
 
 {% block content %}
     <ul>
-        <li> Book </li>
+        {% for book in books %}
+            <li>{{ book.title }}</li>
+        {% endfor %}
     </ul>
 {% endblock content %}
